@@ -1,0 +1,129 @@
+What is Python?
+Python is a high-level, interpreted programming language known for its readability, simplicity, and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used for web development, data analysis, artificial intelligence, scientific computing, and automation.
+
+Key Features of Python
+Readability: Python syntax is clean and easy to read, making it accessible for beginners.
+Interpreted Language: Python code is executed line by line, which simplifies debugging and development.
+Dynamic Typing: Variables do not need explicit declaration; their types are inferred at runtime.
+Extensive Standard Library: Python comes with a vast library of modules and packages for various tasks.
+Cross-Platform: Python runs on various operating systems, including Windows, macOS, and Linux.
+Community and Ecosystem: Python has a large, active community and a rich ecosystem of third-party libraries.
+Use Cases
+Web Development: Frameworks like Django and Flask.
+Data Science and Analysis: Libraries like Pandas, NumPy, and Matplotlib.
+Machine Learning: Libraries like TensorFlow, Keras, and scikit-learn.
+Automation and Scripting: Writing scripts to automate repetitive tasks.
+Scientific Computing: Tools like SciPy and SymPy.
+Installing Python
+Steps to Install Python on Windows
+Go to the official Python website and download the latest version for Windows.
+Run Installer: Execute the downloaded installer. Make sure to check the box "Add Python to PATH" before clicking "Install Now".
+Verify Installation: Open Command Prompt and type python --version. It should display the installed Python version.
+Setting Up a Virtual Environment
+Install venv: venv is included in the standard library for Python 3.3 and above. No additional installation is needed.
+Create a Virtual Environment: In Command Prompt, navigate to your project directory and run python -m venv venv.
+Activate Virtual Environment: Run venv\Scripts\activate on Windows. For macOS/Linux, run source venv/bin/activate.
+Deactivate Virtual Environment: Simply type deactivate.
+Python Syntax and Semantics
+Hello World Program
+python
+print("Hello, World!")
+print: A built-in function that outputs text to the console.
+"Hello, World!": A string literal enclosed in double quotes.
+Data Types and Variables
+Basic Data Types
+int: Integer numbers.
+float: Floating-point numbers.
+str: Strings (text).
+bool: Boolean values (True or False).
+list: Ordered collection of items.
+dict: Unordered collection of key-value pairs.
+Variable Example
+python
+# Integer
+age = 30
+# Float
+height = 5.9
+# String
+name = "Alice"
+# Boolean
+is_student = True
+# List
+numbers = [1, 2, 3, 4, 5]
+# Dictionary
+person = {"name": "Alice", "age": 30}
+
+print(age, height, name, is_student, numbers, person)
+Control Structures
+Conditional Statements
+python
+x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is 5 or less")
+Loops
+python
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+Functions in Python
+Defining and Calling a Function
+python
+def add(a, b):
+    return a + b
+
+# Calling the function
+result = add(3, 4)
+print(result)  # Output: 7
+Lists and Dictionaries
+Lists
+python
+# Create a list
+numbers = [1, 2, 3, 4, 5]
+# Append an element
+numbers.append(6)
+# Access an element
+print(numbers[2])  # Output: 3
+Dictionaries
+python
+# Create a dictionary
+person = {"name": "Alice", "age": 30}
+# Add a key-value pair
+person["city"] = "New York"
+# Access a value
+print(person["name"])  # Output: Alice
+Exception Handling
+Example of Exception Handling
+python
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+finally:
+    print("Execution complete")
+Modules and Packages
+Using the math Module
+python
+import math
+
+# Calculate the square root
+print(math.sqrt(16))  # Output: 4.0
+File I/O
+Reading from a File
+python
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+Writing to a File
+python
+lines = ["First line", "Second line", "Third line"]
+with open('output.txt', 'w') as file:
+    for line in lines:
+        file.write(line + "\n")
